@@ -1,3 +1,29 @@
+:root {
+    --uow-blue: #0080c2;
+    --uow-purple: #7B2182;
+    --uow-green: #1F9C61;
+    --uow-red: #DC0000;
+    --uow-orange: #EC6907;
+    --uow-yellow: #FDC400;
+    --uow-cyan: #00B4D8;
+    --uow-teal: #008F8B;
+    --uow-dark: #6A6767;
+    --uow-light: #E2E2E2;
+    --uow-primary: #008F8B;
+    --uow-secondary: #0080C2;
+    --uow-success: #1F9C61;
+    --uow-info: #00B4D8;
+    --uow-warning: #EC6907;
+    --uow-danger: #DC0000;
+}
+
+html, body {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+html {
+  font-size: 14px;
+}
 
 @media (min-width: 768px) {
   html {
@@ -5,8 +31,48 @@
   }
 }
 
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+/*.line {
+    border: 10px solid rgba(143 139 19 25%);
+}*/
+
+hr.line {
+    border: 5px solid rgba(0, 143, 139, 1);
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: var(--uow-primary) !important;
+    border-color: var(--uow-primary) !important;
+}
+
+.btn-primary:hover {
+    background: #006462 !important;
+    border-color: #006462 !important;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 143, 139, .48) !important;
+}
+
+.btn-default {
     background: var(--uow-dark) !important;
     border-color: var(--uow-dark) !important;
     color: white;
 }
-
