@@ -74,5 +74,6 @@ hr.line {
 .btn-default {
     background: var(--uow-dark) !important;
     border-color: var(--uow-dark) !important;
-    color: white;
+    color: grey;
 }
+
