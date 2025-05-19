@@ -1220,6 +1220,10 @@ input:checked + .slider:before {
   display: none;
 }
 
+.collapse:not(.show) {
+  display: none;
+}
+
 .btn, .btn-outline-warning, .btn-warning, .btn-outline-danger, .btn-danger, .btn-outline-success, .btn-success, .btn-outline-secondary, .btn-secondary, .btn-outline-primary, .btn-primary {
   display: inline-block;
   text-align: center;
