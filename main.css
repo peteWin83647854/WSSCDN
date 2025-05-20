@@ -969,12 +969,16 @@ input:checked + .slider:before {
 
 .navbar {
   position: relative;
+  width: 100%;
+  min-height: 60px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: #f0f0f0; /* Example */
+  z-index: 10; /* Ensure it's above other content */
 }
 
 .navbar > .container {
@@ -1209,9 +1213,12 @@ input:checked + .slider:before {
 }
 
 .sidebar {
-  width: 200px;
   position: fixed;
+  top: 60px;
+  left: 0;
+  width: 200px;
   height: 100vh;
+  z-index: 10; /* Ensure it's above other content */
 }
 .sidebar-inner {
   height: 80%;
@@ -1219,14 +1226,6 @@ input:checked + .slider:before {
 }
 .sidebar-inner::-webkit-scrollbar {
   display: none;
-}
-
-.collapse {
-  display: none;
-}
-
-.show {
-  display: block;
 }
 
 .btn, .btn-outline-warning, .btn-warning, .btn-outline-danger, .btn-danger, .btn-outline-success, .btn-success, .btn-outline-secondary, .btn-secondary, .btn-outline-primary, .btn-primary {
