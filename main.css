@@ -901,6 +901,10 @@ img, svg {
   vertical-align: middle;
 }
 
+.collapse {
+  display: none;
+}
+
 /* Custom Switch */
 .theme-switch {
   position: relative;
